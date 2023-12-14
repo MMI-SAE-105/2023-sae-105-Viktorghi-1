@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="{menuIsOpen: false}">
+<html lang="fr" x-data="{menuIsOpen: false}" :class="{noscroll:menuIsOpen,}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,26 +13,28 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 <body>
-    <header>
+    <header class="header container">
         <a href="/">
-            <img src="assets/icons/Logo.svg" alt="Logo de MeierVisions">
+            <img class="header__logo" src="assets/icons/Logo.svg" alt="Logo de MeierVisions">
         </a>
-        <button aria-controls="mainNav" 
+
+        <button class="header__menu-btn" aria-controls="mainNav" 
         @click="menuIsOpen = ! menuIsOpen">
-            <span></span>
+            <span class="menu-btn__bar"></span>
         </button>
-        <nav id="mainNav" x-show="menuIsOpen">
-            <ul>
-                <li><a href="Meier.html">Richard Meier</a></li>
-                <li><a href="Jubilee_Church.html">Jubilee Church</a></li>
-                <li><a href="MACBA.html">Barcelona Museum of Contemporary Art</a></li>
-                <li><a href="Getty_Center.html">The Getty Center</a></li>
-                <li><a href="Smith_House.html">Smith House</a></li>
-                <li><a href="Ara_Pacis_Museum.html">Ara Pacis Museum</a></li>
-                <li><a href="Douglas_House.html">Douglas House</a></li>
-                <li><a href="High_Museum_Art.html">High Museum of Art</a></li>
-                <li><a href="San_Jose.html">San Jose City Hall</a></li>
-                <li><a href="Billets_infos.html">Billets & infos</a></li>
+
+        <nav class="header__menu" id="mainNav" x-show="menuIsOpen" x-transition.duration.800ms>
+            <ul class="menu__list">
+                <li class="menu__item"><a class="menu__link" href="Meier.html">Richard Meier</a></li>
+                <li class="menu__item"><a class="menu__link" href="Jubilee_Church.html">Jubilee Church</a></li>
+                <li class="menu__item"><a class="menu__link" href="MACBA.html">Barcelona Museum of Contemporary Art</a></li>
+                <li class="menu__item"><a class="menu__link" href="Getty_Center.html">The Getty Center</a></li>
+                <li class="menu__item"><a class="menu__link" href="Smith_House.html">Smith House</a></li>
+                <li class="menu__item"><a class="menu__link" href="Ara_Pacis_Museum.html">Ara Pacis Museum</a></li>
+                <li class="menu__item"><a class="menu__link" href="Douglas_House.html">Douglas House</a></li>
+                <li class="menu__item"><a class="menu__link" href="High_Museum_Art.html">High Museum of Art</a></li>
+                <li class="menu__item"><a class="menu__link" href="San_Jose.html">San Jose City Hall</a></li>
+                <li class="menu__item"><a class="menu__link" href="Billets_infos.html">Billets & infos</a></li>
             </ul>
         </nav>
     </header>

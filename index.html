@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr" x-data="menuIsOpen">
+<html lang="fr" x-data="{menuIsOpen: false}">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,7 +17,8 @@
         <a href="/">
             <img src="assets/icons/Logo.svg" alt="Logo de MeierVisions">
         </a>
-        <button aria-controls="mainNav">
+        <button aria-controls="mainNav" 
+        @click="menuIsOpen = ! menuIsOpen">
             <span></span>
         </button>
         <nav id="mainNav" x-show="menuIsOpen">

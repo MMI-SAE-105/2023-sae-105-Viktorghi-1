@@ -4,9 +4,9 @@
   left: 0;
   width: 100%;
   background-color: var(--black);
+  padding: var(--space2x) var(--space2x);
   display: flex;
   justify-content: space-between;
-  padding: var(--space2x) var(--space2x);
   transition: all 0.3s ease-in-out;
 }
 

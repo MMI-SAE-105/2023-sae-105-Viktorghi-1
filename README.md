@@ -3,7 +3,7 @@
 - NOM : Ghirardelli
 - PRÉNOM : Viktor
 - URL du site :
-- URL FIGMA : https://www.figma.com/file/e52kEwfsVxTVqXYSeKixkm/Viktor_GHIRARDELLI_1C2_Maquette_SAE_105?type=design&node-id=2021%3A6526&mode=design&t=yHH3PvYziJCC8YKC-1
+- URL FIGMA :
 
 # Structure de départ pour la SAE 105.
 

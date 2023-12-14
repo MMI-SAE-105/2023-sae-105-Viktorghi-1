@@ -1,0 +1,30 @@
+:root {
+  /* Color styles */
+  --white: rgba(237, 242, 244, 1);
+  --light-blue: rgba(136, 212, 243, 1);
+  --blue: rgba(60, 154, 192, 1);
+  --dark-blue: rgba(24, 98, 126, 1);
+  --black: rgba(7, 34, 45, 1);
+  --dark-gray: rgba(130, 130, 130, 1);
+  --gray: rgba(182, 188, 191, 1);
+
+  /* Text-size styles */
+  --h1: 26px;
+  --h2: 20px;
+  --h3: 16px;
+  --btn: 16px;
+  --body: 14px;
+  --body-bold: 14px;
+  --small-body: 11px;
+
+  /* Polices de caractère */
+  --font-body: "Lato", sans-serif;
+  --font-title: "Merriweather", serif;
+
+  /* Espaces */
+  --space1x: 15x;
+  --space2x: 20px;
+  --space3x: 25px;
+  --space4x: 30px;
+  --space5x: 60px;
+}

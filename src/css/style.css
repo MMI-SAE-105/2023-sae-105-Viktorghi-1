@@ -7,3 +7,21 @@
 
 /* Utils */
 @import "utils/variables.css";
+
+/* Base */
+@import "base/base.css";
+@import "base/media.css";
+
+/* Layout */
+@import "layout/header.css";
+@import "layout/footer.css";
+@import "layout/form.css";
+@import "layout/sections.css";
+
+/* Components */
+@import "components/button.css";
+@import "components/menu.css";
+@import "components/card.css";
+@import "components/caroussel.css";
+@import "components/hero.css";
+@import "components/searchform.css";

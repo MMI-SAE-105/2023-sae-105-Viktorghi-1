@@ -10,8 +10,21 @@
   left: 0;
   right: 0;
   background-color: var(--black);
-  text-color: var(--white);
   font-size: var(--h2);
 }
 
-.menu;
+.menu--open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__list {
+}
+
+.menu__item {
+}
+
+.menu__link {
+  color: var(--white);
+  text-decoration: none;
+}

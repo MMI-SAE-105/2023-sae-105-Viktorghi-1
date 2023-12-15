@@ -1,0 +1,27 @@
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  border: 2px solid var(--black);
+  color: var(--black);
+  font-size: var(--btn);
+  display: inline-flex;
+  place-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn__variant {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  font-size: var(--btn);
+  display: inline-flex;
+  place-items: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+}

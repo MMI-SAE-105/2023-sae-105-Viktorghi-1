@@ -1,0 +1,25 @@
+.head {
+  position: relative;
+  color: var(--white);
+  background-color: var(--black);
+  height: 24.4vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.head__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+}
+
+.head__title,
+.head__sub-title {
+  position: relative;
+  z-index: 1;
+}

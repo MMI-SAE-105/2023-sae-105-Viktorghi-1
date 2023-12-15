@@ -35,8 +35,8 @@ h3 {
 }
 
 .container {
-  padding-left: var(--space2x);
-  padding-right: var(--space2x);
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .noscroll,

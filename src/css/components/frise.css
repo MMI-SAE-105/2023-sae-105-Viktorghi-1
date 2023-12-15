@@ -1,0 +1,31 @@
+.frise {
+  display: flex;
+  justify-content: space-between;
+  align-items: column;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.frise__oeuvre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.frise__img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.frise__text {
+  width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 30px;
+}

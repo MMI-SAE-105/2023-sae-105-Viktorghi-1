@@ -14,4 +14,5 @@ figure {
 figcaption {
   font-size: var(--small-body);
   color: var(--dark-gray);
+  justify-content: center;
 }

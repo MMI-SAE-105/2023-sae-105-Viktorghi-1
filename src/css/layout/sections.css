@@ -9,9 +9,28 @@
 }
 
 .section__intro-title {
-  margin: 30px;
+  margin-bottom: 30px;
+}
+
+.section__img {
+  margin-top: 30px;
 }
 
 .section__intro-sub-title {
   color: var(--dark-blue);
+}
+
+.section__tarifs {
+  background-color: var(--dark-blue);
+  color: var(--white);
+  padding: 30px 20px;
+}
+
+.section__ul {
+  margin: 20px 0;
+}
+
+.section__li {
+  display: flex;
+  justify-content: space-between;
 }

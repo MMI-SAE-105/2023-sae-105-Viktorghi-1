@@ -3,7 +3,7 @@
 - NOM : Ghirardelli
 - PRÉNOM : Viktor
 - URL du site : http://meiervisions.viktorghirardelli.fr/
-- URL FIGMA :
+- URL FIGMA : https://www.figma.com/file/e52kEwfsVxTVqXYSeKixkm/Viktor_GHIRARDELLI_1C2_Maquette_SAE_105?type=design&node-id=2021%3A6964&mode=design&t=T3QUU7QdbRRIIWv5-1
 
 # Structure de départ pour la SAE 105.
 

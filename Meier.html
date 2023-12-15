@@ -14,7 +14,7 @@
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
 </head>
 
-<body>
+<body x-data="{ atTop: true }">
     <header class="header">
         <div class="header__start">
             <a href="/">
@@ -23,12 +23,13 @@
         </div>
     
         <div class="header__end">
-            <button class="header__menu-btn menu-btn">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
                 <span class="menu-btn__bar"></span>
             </button>
     
-            <nav class="header__menu menu">
-                <ul class="menu__list">
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
                     <li class="menu__item"><a class="menu__link" href="Meier.html">Richard Meier</a></li>
                     <li class="menu__item"><a class="menu__link" href="Jubilee_Church.html">Jubilee Church</a></li>
                     <li class="menu__item"><a class="menu__link" href="MACBA.html">Barcelona Museum of ContemporaryArt</a>

@@ -9,7 +9,7 @@
 @import "utils/variable.css";
 
 /* Base */
-@import "base/base.css";
+@import "base/main.css";
 @import "base/media.css";
 
 /* Layout */

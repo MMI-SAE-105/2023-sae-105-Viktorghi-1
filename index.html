@@ -68,92 +68,31 @@
             unique de l'espace, de la lumière et de la forme.</p>
         </section>
 
-        <section class="section container">
+        <section class="section container"
+               x-data="{ 'cards' : async ()=> {
+                 const resp = await fetch('/src/data/agenda.json');
+                 return await resp.json();
+               }}">
             <h2 class="section__title">Articles populaires</h2>
             <p>En attendant de visiter cette exposition, venez découvrir la vie de Richard Meier ainsi que ses œuvres les plus
             emblématiques à travers nos articles.</p>
 
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/Meier_home.webp" alt="Richard Meier">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="Meier.html">Richard Meier</a></h3>
-                    <p class="card__text">Dans le monde de l'architecture contemporaine, le nom de Richard Meier résonne avec un...</p>
-                    <a class="btn" href="Meier.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/Jubilee_Church_home.webp" alt="Jubilee Church">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="Jubilee_Church.html">Jubilee Church</a></h3>
-                    <p class="card__text">À la Confluence de la Spiritualité et de l'Architecture.
-                        Au cœur de Rome, la Jubilee...</p>
-                    <a class="btn" href="Jubilee_Church.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/MACBA_home.webp" alt="Barcelona Museum of Contemporary Art">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="MACBA.html">Barcelona Museum of Contemporary Art</a></h3>
-                    <p class="card__text">Au cœur de la cité cosmopolite de Barcelone, un édifice se...</p>
-                    <a class="btn" href="MACBA.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/Getty_center_home.webp" alt="The Getty Center">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="Getty_Center.html">The Getty Center</a></h3>
-                    <p class="card__text">Dominant majestueusement les collines de Brentwood à Los Angeles, The Getty Center...</p>
-                    <a class="btn" href="Getty_Center.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/Smith_house_home.webp" alt="Smith House">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="Smith_House.html">Smith House</a></h3>
-                    <p class="card__text">Nichée parmi les collines verdoyantes du Connecticut, la Smith House s'élève comme un...</p>
-                    <a class="btn" href="Smith_House.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/Ara_pacis_museum_home.webp" alt="Ara Pacis Museum">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="Ara_Pacis_Museum.html">Ara Pacis Museum</a></h3>
-                    <p class="card__text">Au cœur de Rome, ville éternelle imprégnée d'histoire, l'Ara Pacis Museum se dresse...</p>
-                    <a class="btn" href="Ara_Pacis_Museum.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/Douglas_house_home.webp" alt="Douglas House">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="Douglas_House.html">Douglas House</a></h3>
-                    <p class="card__text">Surplombant majestueusement les rives du lac Michigan, la Douglas House est une œuvre...</p>
-                    <a class="btn" href="Douglas_House.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/High_museum_art_home.webp" alt="High Museum of Art">
-                <div class="card__caption">
-                    <h3 class="card__title"><a class="card__title-link" href="High_Museum_Art.html">High Museum of Art</a></h3>
-                    <p class="card__text">Dominant le paysage urbain d'Atlanta de sa silhouette imposante, le High Museum of...</p>
-                    <a class="btn" href="High_Museum_Art.html">Voir plus</a>
-                </div>
-            </article>
-
-            <article class="section__card card">
-                <img class="card__img" src="assets/img/Home/San_jose_city_hall_home.webp" alt="San Jose City Hall">
-                <div class="card__caption">                
-                    <h3 class="card__title"><a class="card__title-link" href="San_Jose.html">San Jose City Hall</a></h3>
-                    <p class="card__text">Au cœur de la Silicon Valley, le San Jose City Hall se dresse comme une déclaration...</p>
-                    <a class="btn" href="San_Jose.html">Voir plus</a>
-                </div>
-            </article>
+            <template x-for="card in cards" :key="card.id">
+            
+                <article class="section__card card">
+                    <div class="card__img">
+                        <img :src="card.picture" :alt="card.picture_desc">
+                    </div>
+                    <h3 class="card__title">
+                        <a class="card__title-link" :href="card.link" x-text="card.title"></a>
+                    </h3>
+                    <div class="card__caption">
+                        <p class="card__text" x-text="card.text"></p>
+                        <a class="card__link btn" :href="card.link">Plus d'info</a>
+                    </div>
+                </article>
+            
+            </template>
 
         </section>
 

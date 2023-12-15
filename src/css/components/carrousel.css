@@ -1,4 +1,4 @@
-.caroussel {
+.carrousel {
   display: flex;
   gap: 20px;
   overflow-x: scroll;
@@ -7,24 +7,24 @@
   scroll-snap-type: x mandatory;
 }
 
-.caroussel__item {
+.carrousel__item {
   flex: 1 0 260px;
   scroll-snap-align: center;
 }
 
-.caroussel__item img {
+.carrousel__item img {
   display: block;
 }
 
-.caroussel::-webkit-scrollbar-track {
+.carrousel::-webkit-scrollbar-track {
   background-color: var(--blue);
 }
 
-.caroussel::-webkit-scrollbar {
+.carrousel::-webkit-scrollbar {
   height: 4px;
   background-color: var(--blue);
 }
 
-.caroussel::-webkit-scrollbar-thumb {
+.carrousel::-webkit-scrollbar-thumb {
   background-color: var(--light-blue);
 }

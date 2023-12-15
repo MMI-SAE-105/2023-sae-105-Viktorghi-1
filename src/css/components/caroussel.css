@@ -1,0 +1,30 @@
+.caroussel {
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  margin-left: calc(0px - 20px);
+  margin-right: calc(0px - 20px);
+  scroll-snap-type: x mandatory;
+}
+
+.caroussel__item {
+  flex: 1 0 260px;
+  scroll-snap-align: center;
+}
+
+.caroussel__item img {
+  display: block;
+}
+
+.caroussel::-webkit-scrollbar-track {
+  background-color: var(--blue);
+}
+
+.caroussel::-webkit-scrollbar {
+  height: 4px;
+  background-color: var(--blue);
+}
+
+.caroussel::-webkit-scrollbar-thumb {
+  background-color: var(--light-blue);
+}

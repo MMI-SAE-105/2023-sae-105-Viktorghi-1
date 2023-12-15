@@ -8,11 +8,20 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  transition: all 0.3s ease-in-out;
+}
+
+.header--atTop {
+  background-color: var(--black);
 }
 
 .header__end {
   display: flex;
   gap: 20px;
+}
+
+.header--atTop .header__search {
+  filter: none;
 }
 
 .header__logo {

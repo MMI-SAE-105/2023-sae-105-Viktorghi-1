@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MeierVisions">
+
+    <title>Ara Pacis Museum</title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+
+    <header class="header">
+        <div class="header__start">
+            <a href="/">
+                <img class="header__logo" src="assets/icons/Logo.svg" alt="Logo de MeierVisions">
+            </a>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Meier.html">Richard Meier</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Jubilee_Church.html">Ara Pacis Museum</a></li>
+                    <li class="menu__item"><a class="menu__link" href="MACBA.html">Barcelona Museum of
+                            ContemporaryArt</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="Getty_Center.html">The Getty Center</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Smith_House.html">Smith House</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Ara_Pacis_Museum.html">Ara Pacis Museum</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Douglas_House.html">Douglas House</a></li>
+                    <li class="menu__item"><a class="menu__link" href="High_Museum_Art.html">High Museum of Art</a></li>
+                    <li class="menu__item"><a class="menu__link" href="San_Jose.html">San Jose City Hall</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Billets_infos.html">Billets & infos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="head container">
+            <h1 class="head__title">Ara Pacis Museum</h1>
+            <h3 class="head__sub-title">Fondation Cartier</h3>
+            <img class="head__img" src="assets/img/Ara_Pacis_Museum/Ara_pacis_museum_head.webp"
+                alt="Photo du Ara Pacis Museum">
+        </section>
+
+        <section class="section container">
+            <span class="section__intro-title">
+                <h4>Au cœur de Rome, ville éternelle imprégnée d'histoire, l'Ara Pacis Museum se dresse comme un édifice moderne qui abrite
+                l'un des trésors les plus emblématiques de l'Antiquité : l'Ara Pacis d'Auguste.</h4>
+                <h4>Conçu par l'architecte américain Richard Meier, ce musée incarne la fusion magistrale entre le passé et le présent,
+                offrant une expérience unique aux visiteurs qui parcourent les siècles pour se plonger dans l'ère augustéenne.</h4>
+            </span>
+            <span class="section__intro-sub-title">
+                <p>par Viktor Ghirardelli</p>
+                <p>Publié aujourd’hui | Temps de lecture 1 min</p>
+            </span>
+
+        </section>
+
+        <section class="section container">
+            <h2 class="section__title">Genèse et Réalisation</h2>
+            <p>L'Ara Pacis Museum est né de la nécessité de protéger et de mettre en valeur l'Ara Pacis, l'autel de la paix commandé
+            par l'empereur Auguste au 1er siècle avant J.-C. En 2006, Richard Meier a dévoilé ce musée moderne, une œuvre
+            architecturale éblouissante située le long des rives du Tibre.</p>
+            <p>Les lignes épurées et le jeu subtil de la lumière font écho à la grandeur du passé, tout en offrant un cadre
+            contemporain à cette relique historique.</p>
+            <figure>
+                <img class="section__img" src="assets/img/Ara_Pacis_Museum/Ara_pacis_museum_page.webp" alt="Ara Pacis Museum">
+                <figcaption>Photo du Ara Pacis Museum</figcaption>
+            </figure>
+        </section>
+
+        <section class="section container">
+            <h2 class="section__title">Description Visuelle et Emplacement</h2>
+            <p>Situé sur la Lungotevere in Augusta, l'Ara Pacis Museum est une déclaration visuelle. Les façades en verre et en
+            travertin confèrent une élégance discrète à l'édifice, créant un dialogue subtil entre la modernité et l'antiquité. À
+            l'intérieur, les visiteurs découvrent une mise en scène soigneusement orchestrée de l'Ara Pacis, baignée dans une
+            lumière naturelle qui souligne les détails délicats de cette œuvre artistique exceptionnelle.</p>
+            <p>Le musée s'intègre parfaitement dans le tissu urbain de Rome, ajoutant une dimension contemporaine à la richesse
+            historique de la ville. Les jardins qui entourent le musée offrent un espace serein, invitant les visiteurs à la
+            contemplation.</p>
+        </section>
+
+        <section class="section container">
+            <h2 class="section__title">Galerie</h2>
+            <p>Découvrez le Ara Pacis Museum conçu par Richard Meier en explorant cette galerie d'images détaillée.</p>
+            <div class="galerie">
+                <figure>
+                    <img src="assets/img/Ara_Pacis_Museum/Ara_pacis_museum_gal1.webp" alt="Ara Pacis Museum">
+                    <figcaption>Photo du Ara Pacis Museum</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/Ara_Pacis_Museum/Ara_pacis_museum_gal2.webp" alt="Ara Pacis Museum">
+                    <figcaption>Photo du Ara Pacis Museum</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/Ara_Pacis_Museum/Ara_pacis_museum_gal3.webp" alt="Ara Pacis Museum intérieur">
+                    <figcaption>Photo du Ara Pacis Museum</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="assets/img/Ara_Pacis_Museum/Ara_pacis_museum_gal4.webp" alt="Ara Pacis Museum sketch">
+                    <figcaption>Photo du Ara Pacis Museum</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__logo" src="assets/icons/Logo.svg" alt="Logo de Meier Visions">
+        <nav class="footer__menu">
+            <h4 class="footer__title">Menu</h4>
+            <ul class="list-unstyled">
+                <li><a href="Meier.html">Richard Meier</a></li>
+                <li><a href="Billets_infos.html">Billets & infos</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <h4 class="footer__title">Email</h4>
+            <a href="mailto:MeierVisions@gmail.com">MeierVisions@gmail.com</a>
+            <h4 class="footer__title">Adresse</h4>
+            <p class="footer__address">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </div>
+
+        <div class="footer__mentions">
+            <h4>Mentions légales</h4>
+            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    href="https://mmimontbeliard.com/">MMI Montbéliard</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

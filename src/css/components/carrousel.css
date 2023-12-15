@@ -26,12 +26,12 @@
   transform: translateY(-50%);
   width: 2rem;
   height: 2rem;
-  background: darkslateblue;
+  background: var(--black);
   border-radius: 50%;
   border: none;
   display: grid;
   place-content: center;
-  color: #fff;
+  color: var(--white);
 }
 
 .carrousel_btn-avant {

@@ -2,7 +2,7 @@
   position: relative;
   color: var(--white);
   background-color: var(--black);
-  height: 24.4vh;
+  height: 30vh;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;

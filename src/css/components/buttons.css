@@ -3,8 +3,8 @@
   text-decoration: none;
   font-weight: bold;
   padding: 10px;
-  border: 2px solid var(--black);
-  color: var(--black);
+  border: 2px solid var(--light-blue);
+  color: var(--light-blue);
   font-size: var(--btn);
   display: inline-flex;
   place-items: center;

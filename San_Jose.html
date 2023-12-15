@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{ menuIsOpen: false }" :class="menuIsOpen && 'noscroll'">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MeierVisions">
+
+    <title></title>
+
+    <link rel="stylesheet" href="src/css/style.css">
+
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
+</head>
+
+<body x-data="{ atTop: true }">
+
+    <header class="header">
+        <div class="header__start">
+            <a href="/">
+                <img class="header__logo" src="assets/icons/Logo.svg" alt="Logo de MeierVisions">
+            </a>
+        </div>
+
+        <div class="header__end">
+            <button class="header__menu-btn menu-btn" aria-label="menu" aria-expanded="false" aria-controls="mainNav"
+                @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menu-btn--open'">
+                <span class="menu-btn__bar"></span>
+            </button>
+
+            <nav class="header__menu menu" id="mainNav" :class="menuIsOpen && 'menu--open'">
+                <ul class="menu__list list-unstyled">
+                    <li class="menu__item"><a class="menu__link" href="Meier.html">Richard Meier</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Jubilee_Church.html">Barcelona Museum of
+                            Contemporary Art</a></li>
+                    <li class="menu__item"><a class="menu__link" href="MACBA.html">Barcelona Museum of
+                            ContemporaryArt</a>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="Getty_Center.html">The Getty Center</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Smith_House.html">Smith House</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Ara_Pacis_Museum.html">Barcelona Museum of
+                            Contemporary Art</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Douglas_House.html">Douglas House</a></li>
+                    <li class="menu__item"><a class="menu__link" href="High_Museum_Art.html">High Museum of Art</a></li>
+                    <li class="menu__item"><a class="menu__link" href="San_Jose.html">San Jose City Hall</a></li>
+                    <li class="menu__item"><a class="menu__link" href="Billets_infos.html">Billets & infos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="head container">
+            <h1 class="head__title"></h1>
+            <h3 class="head__sub-title">Fondation Cartier</h3>
+            <img class="head__img" src="assets/img/" alt="Photo du ">
+        </section>
+
+        <section class="section container">
+            <span class="section__intro-title">
+                <h4></h4>
+                <h4></h4>
+            </span>
+            <span class="section__intro-sub-title">
+                <p>par Viktor Ghirardelli</p>
+                <p>Publié aujourd’hui | Temps de lecture 1 min</p>
+            </span>
+
+        </section>
+
+        <section class="section container">
+            <h2 class="section__title">Genèse et Réalisation</h2>
+            <p></p>
+            <p></p>
+            <figure>
+                <img class="section__img" src="assets/img/" alt="">
+                <figcaption>Photo du </figcaption>
+            </figure>
+        </section>
+
+        <section class="section container">
+            <h2 class="section__title">Description Visuelle et Emplacement</h2>
+            <p></p>
+            <p></p>
+        </section>
+
+        <section class="section container">
+            <h2 class="section__title">Galerie</h2>
+            <p></p>
+            <div class="galerie">
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="assets/img/" alt="">
+                    <figcaption class="galerie__fig">Photo du </figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="assets/img/" alt="">
+                    <figcaption class="galerie__fig">Photo du </figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="assets/img/" alt=" intérieur">
+                    <figcaption class="galerie__fig">Photo du </figcaption>
+                </figure>
+
+                <figure class="galerie__figure">
+                    <img class="galerie__img" src="assets/img/" alt=" sketch">
+                    <figcaption class="galerie__fig">Photo du </figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <img class="footer__logo" src="assets/icons/Logo.svg" alt="Logo de Meier Visions">
+        <nav class="footer__menu">
+            <h4 class="footer__title">Menu</h4>
+            <ul class="list-unstyled">
+                <li><a href="Meier.html">Richard Meier</a></li>
+                <li><a href="Billets_infos.html">Billets & infos</a></li>
+            </ul>
+        </nav>
+
+        <div class="footer__contact">
+            <h4 class="footer__title">Email</h4>
+            <a href="mailto:MeierVisions@gmail.com">MeierVisions@gmail.com</a>
+            <h4 class="footer__title">Adresse</h4>
+            <p class="footer__address">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </div>
+
+        <div class="footer__mentions">
+            <h4>Mentions légales</h4>
+            <p>Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    href="https://mmimontbeliard.com/">MMI Montbéliard</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>
